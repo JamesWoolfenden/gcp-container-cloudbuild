@@ -1,13 +1,14 @@
 # how to build a container in cloud build
 
-Set-up you repository and set your project to use a trigger(in cloud build):
+Set-up your repository, and then set-up your project to use a trigger (in cloud build).
+Choose the option:
 
 ```option
 Cloud Build configuration file (yaml or json)
 Specify the path to a Cloud Build configuration file
 ```
 
-Update cloudbuild.yaml:
+Then update **cloudbuild.yaml**:
 
 ```yaml
   args: ['build', '--tag=gcr.io/<project>/<container>', '.']
