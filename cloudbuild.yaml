@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/gradle'
+  args: ['build']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '--tag=gcr.io/<project>/<container>', '.']
+images: ['gcr.io/<project>/<container>']
