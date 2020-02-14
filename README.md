@@ -1,4 +1,4 @@
-# how to build a spring boot container in cloud build
+# How to build a spring boot container in Cloud build
 
 Set-up your repository, and then set-up your project to use a trigger (in cloud build).
 Choose the option:
